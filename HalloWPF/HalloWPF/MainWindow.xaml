@@ -1,0 +1,61 @@
+﻿<Window x:Class="HalloWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HalloWPF"
+        mc:Ignorable="d"
+        Title="Hallo WPF" Height="450" Width="200">
+    <Window.Style>
+        <Style TargetType="Window" BasedOn="{StaticResource {x:Type Window}}"/>
+    </Window.Style>
+    <StackPanel>
+        <CheckBox>Check mich</CheckBox>
+        <TextBox/>
+        <Button>
+            <Button.Content>
+                <StackPanel Orientation="Horizontal">
+                    <Ellipse Width="40" Height="40" Fill="red" />
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Hallo</TextBlock>
+                    <Ellipse Width="40" Height="40" Fill="red" />
+                    <ComboBox>
+                        <CheckBox>
+                            <CheckBox.Content>
+                                <TextBox></TextBox>
+                            </CheckBox.Content>
+                        </CheckBox>
+                    </ComboBox>
+                </StackPanel>
+            </Button.Content>
+        </Button>
+        <Button Content="Klick mich!">
+            <Button.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="red" Offset="0"/>
+                    <GradientStop Color="Blue" Offset="0.5"/>
+                    <GradientStop Color="Yellow" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <GroupBox Header="Binding">
+
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label>Name</Label>
+                <Label Grid.Column="0" Grid.Row="1">Vorname</Label>
+                <TextBox Name="tb1" Grid.Column="1" />
+                <TextBox Text="{Binding ElementName=tb1,Path=Text,UpdateSourceTrigger=PropertyChanged}"
+                         Background="{Binding ElementName=tb1,Path=Text}" Grid.Column="1" Grid.Row="1"/>
+            </Grid>
+
+
+        </GroupBox>
+    </StackPanel>
+</Window>
