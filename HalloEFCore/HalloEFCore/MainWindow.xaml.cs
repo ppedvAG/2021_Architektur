@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using HalloEFCore.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace HalloEFCore
 {
@@ -23,6 +12,14 @@ namespace HalloEFCore
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void LoadAll(object sender, RoutedEventArgs e)
+        {
+            var con = new EfContext();
+            con.Database.EnsureCreated();
+
+            myGrid.ItemsSource = con.Mitarbeiter.Where(x => x.GebDatum.Month == 11).ToList();
         }
     }
 }

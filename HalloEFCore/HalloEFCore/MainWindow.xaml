@@ -20,7 +20,7 @@
         </Menu>
         <StatusBar DockPanel.Dock="Bottom" Height="22" Background="GreenYellow"/>
         <WrapPanel DockPanel.Dock="Top">
-            <Button>Alle laden</Button>
+            <Button Click="LoadAll">Alle laden</Button>
         </WrapPanel>
         <DataGrid Name="myGrid"/>
     </DockPanel>
