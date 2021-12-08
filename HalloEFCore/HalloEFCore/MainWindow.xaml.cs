@@ -18,6 +18,7 @@ namespace HalloEFCore
         {
             InitializeComponent();
             _context.Database.EnsureCreated();
+             
         }
 
         private void LoadAll(object sender, RoutedEventArgs e)
@@ -32,6 +33,8 @@ namespace HalloEFCore
 
             int count = _context.Mitarbeiter.Count(x => x.Abteilungen.Count() > 1);
             MessageBox.Show(count.ToString());
+
+            MessageBox.Show(query.ToQueryString());
 
             //myGrid.ItemsSource = _context.Mitarbeiter.Include(x => x.Abteilungen).ToList();
         }
