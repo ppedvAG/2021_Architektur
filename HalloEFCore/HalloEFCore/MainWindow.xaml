@@ -20,9 +20,23 @@
         </Menu>
         <StatusBar DockPanel.Dock="Bottom" Height="22" Background="GreenYellow"/>
         <WrapPanel DockPanel.Dock="Top">
-            <Button Click="LoadAll">Alle laden</Button>
+            <Button Click="LoadAll">Alle laden (Query)</Button>
+            <Button Click="LoadAllLambda">Alle laden (Lambda)</Button>
+            <Button Click="FirstOfMay">Der erste der im Mais GebTag hatte</Button>
+            <Button Click="CreateDemodata">Demodaten erstellen</Button>
         </WrapPanel>
-        <DataGrid Name="myGrid"/>
+        <DataGrid Name="myGrid" >
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="Abteilungen">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ListBox ItemsSource="{Binding Abteilungen}" 
+                                     DisplayMemberPath="Bezeichnung"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
     </DockPanel>
 
 </Window>
