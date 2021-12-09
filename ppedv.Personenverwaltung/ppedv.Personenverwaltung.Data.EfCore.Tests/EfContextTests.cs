@@ -61,7 +61,8 @@ namespace ppedv.Personenverwaltung.Data.EfCore.Tests
             using (var context = new EfContext())
             {
                 var loaded = context.Kunden.Find(kunde.Id);
-                Assert.Null(loaded);
+                //Assert.Null(loaded);
+                loaded.Should().BeNull();   
             }
         }
 
