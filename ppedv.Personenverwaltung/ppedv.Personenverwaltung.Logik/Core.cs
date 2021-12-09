@@ -5,14 +5,11 @@ namespace ppedv.Personenverwaltung.Logik
 {
     public class Core
     {
-        private IRepository repo = new Data.EfCore.EfRepository();
-
-
+        public IRepository Repository { get; } = new Data.EfCore.EfRepository();
 
         public IEnumerable<Kunde> GetKundenThatHaveBirtdayThatMonth(int month)
         {
-            return repo.GetAll<Kunde>().Where(x => x.GebDatum.Month == month);
+            return Repository.GetAll<Kunde>().Where(x => x.GebDatum.Month == month);
         }
-
     }
 }
