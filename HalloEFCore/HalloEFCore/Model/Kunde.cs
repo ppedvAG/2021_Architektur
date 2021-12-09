@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HalloEFCore.Model
 {
-    class Kunde : Person
+    partial class Kunde : Person
     {
         [Required]
         [Column("CustomerNumber")]

@@ -24,6 +24,7 @@
             <Button Click="LoadAllLambda">Alle laden (Lambda)</Button>
             <Button Click="FirstOfMay">Der erste der im Mais GebTag hatte</Button>
             <Button Click="CreateDemodata">Demodaten erstellen</Button>
+            <Button Click="SaveAll">Save</Button>
         </WrapPanel>
         <DataGrid Name="myGrid" >
             <DataGrid.Columns>

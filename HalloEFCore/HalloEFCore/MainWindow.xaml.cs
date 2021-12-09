@@ -83,6 +83,9 @@ namespace HalloEFCore
             _context.SaveChanges();
         }
 
-
+        private void SaveAll(object sender, RoutedEventArgs e)
+        {
+            _context.SaveChanges();
+        }
     }
 }
