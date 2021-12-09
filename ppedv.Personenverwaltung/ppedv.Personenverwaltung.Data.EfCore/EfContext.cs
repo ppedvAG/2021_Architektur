@@ -12,7 +12,7 @@ namespace ppedv.Personenverwaltung.Data.EfCore
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=Personenverwaltung_DEV;Trusted_Connection=true;trustservercertificate=true");
+            optionsBuilder.UseLazyLoadingProxies().UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=Personenverwaltung_DEV;Trusted_Connection=true;trustservercertificate=true");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

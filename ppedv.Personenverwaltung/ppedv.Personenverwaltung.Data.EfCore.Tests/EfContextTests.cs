@@ -1,6 +1,9 @@
+using AutoFixture;
+using FluentAssertions;
 using ppedv.Personenverwaltung.Model;
 using System;
 using Xunit;
+using Microsoft.EntityFrameworkCore;
 
 namespace ppedv.Personenverwaltung.Data.EfCore.Tests
 {
@@ -61,5 +64,32 @@ namespace ppedv.Personenverwaltung.Data.EfCore.Tests
                 Assert.Null(loaded);
             }
         }
+
+
+        [Fact]
+        public void Can_create_Kunde_AutoFixture()
+        {
+            var fix = new Fixture();
+            fix.Behaviors.Add(new OmitOnRecursionBehavior());
+            fix.Customizations.Add(new PropertyNameOmitter(nameof(Entity.Id))); // ID auf 0 lassen
+
+            var kunde = fix.Create<Kunde>();
+            using (var context = new EfContext())
+            {
+                context.Add(kunde);
+                context.SaveChanges();
+            }
+
+            using (var context = new EfContext())
+            {
+                //var loaded = context.Kunden.Include(x => x.Mitarbeiter).ThenInclude(x => x.Abteilungen).;
+                var loaded = context.Kunden.Find(kunde.Id);
+
+                loaded.Should().BeEquivalentTo(kunde, cfg => cfg.IgnoringCyclicReferences());
+            }
+
+        }
+
+
     }
 }
