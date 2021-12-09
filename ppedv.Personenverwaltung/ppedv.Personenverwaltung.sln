@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Personenverwaltung.Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Personenverwaltung.Logik", "ppedv.Personenverwaltung.Logik\ppedv.Personenverwaltung.Logik.csproj", "{6065E262-A14B-4690-98AB-A761C51A34E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Personenverwaltung.UI.DevConsole", "ppedv.Personenverwaltung.UI.DevConsole\ppedv.Personenverwaltung.UI.DevConsole.csproj", "{F9A60C83-7012-455B-88FA-DBA9A5ACE290}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{6065E262-A14B-4690-98AB-A761C51A34E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6065E262-A14B-4690-98AB-A761C51A34E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6065E262-A14B-4690-98AB-A761C51A34E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9A60C83-7012-455B-88FA-DBA9A5ACE290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9A60C83-7012-455B-88FA-DBA9A5ACE290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9A60C83-7012-455B-88FA-DBA9A5ACE290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9A60C83-7012-455B-88FA-DBA9A5ACE290}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
