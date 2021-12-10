@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.31911.260
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Personenverwaltung.Model", "ppedv.Personenverwaltung.Model\ppedv.Personenverwaltung.Model.csproj", "{E755C2E2-47C1-4E6A-9AD2-600228A75B69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.Personenverwaltung.Model", "ppedv.Personenverwaltung.Model\ppedv.Personenverwaltung.Model.csproj", "{E755C2E2-47C1-4E6A-9AD2-600228A75B69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Personenverwaltung.Data.EfCore", "ppedv.Personenverwaltung.Data.EfCore\ppedv.Personenverwaltung.Data.EfCore.csproj", "{02122E4A-27E5-423E-9B78-75F0989F8658}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.Personenverwaltung.Data.EfCore", "ppedv.Personenverwaltung.Data.EfCore\ppedv.Personenverwaltung.Data.EfCore.csproj", "{02122E4A-27E5-423E-9B78-75F0989F8658}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Personenverwaltung.Data.EfCore.Tests", "ppedv.Personenverwaltung.Data.EfCore.Tests\ppedv.Personenverwaltung.Data.EfCore.Tests.csproj", "{92523DF9-C000-4A04-A548-AE46CA4542F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.Personenverwaltung.Data.EfCore.Tests", "ppedv.Personenverwaltung.Data.EfCore.Tests\ppedv.Personenverwaltung.Data.EfCore.Tests.csproj", "{92523DF9-C000-4A04-A548-AE46CA4542F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Personenverwaltung.Logik", "ppedv.Personenverwaltung.Logik\ppedv.Personenverwaltung.Logik.csproj", "{6065E262-A14B-4690-98AB-A761C51A34E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.Personenverwaltung.Logik", "ppedv.Personenverwaltung.Logik\ppedv.Personenverwaltung.Logik.csproj", "{6065E262-A14B-4690-98AB-A761C51A34E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Personenverwaltung.UI.DevConsole", "ppedv.Personenverwaltung.UI.DevConsole\ppedv.Personenverwaltung.UI.DevConsole.csproj", "{F9A60C83-7012-455B-88FA-DBA9A5ACE290}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.Personenverwaltung.UI.DevConsole", "ppedv.Personenverwaltung.UI.DevConsole\ppedv.Personenverwaltung.UI.DevConsole.csproj", "{F9A60C83-7012-455B-88FA-DBA9A5ACE290}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Personenverwaltung.Logik.Tests", "ppedv.Personenverwaltung.Logik.Tests\ppedv.Personenverwaltung.Logik.Tests.csproj", "{6A23AFAD-B7A5-45DC-BB56-F60649FB890F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{F9A60C83-7012-455B-88FA-DBA9A5ACE290}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9A60C83-7012-455B-88FA-DBA9A5ACE290}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9A60C83-7012-455B-88FA-DBA9A5ACE290}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A23AFAD-B7A5-45DC-BB56-F60649FB890F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A23AFAD-B7A5-45DC-BB56-F60649FB890F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A23AFAD-B7A5-45DC-BB56-F60649FB890F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A23AFAD-B7A5-45DC-BB56-F60649FB890F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

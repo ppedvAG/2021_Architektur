@@ -19,7 +19,10 @@ namespace ppedv.Personenverwaltung.Logik
 
         public Mitarbeiter GetMitarbeiterWithMostKunden()
         {
-            return Repository.GetAll<Mitarbeiter>().OrderBy(x => x.Kunden.Count()).FirstOrDefault();
+            return Repository.GetAll<Mitarbeiter>()
+                             .OrderByDescending(x => x.Kunden.Count())
+                             .ThenBy(x => x.Name)
+                             .FirstOrDefault();
         }
     }
 }
