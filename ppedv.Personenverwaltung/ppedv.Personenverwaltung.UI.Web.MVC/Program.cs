@@ -1,11 +1,14 @@
 using ppedv.Personenverwaltung.Data.EfCore;
 using ppedv.Personenverwaltung.Model.Contacts;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews().AddJsonOptions(c => c.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
 builder.Services.AddSingleton<IRepository>(new EfRepository());
+
+ 
 
 var app = builder.Build();
 
