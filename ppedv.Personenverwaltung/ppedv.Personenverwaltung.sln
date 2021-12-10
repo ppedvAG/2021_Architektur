@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Personenverwaltung.Lo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Personenverwaltung.UI.Web.MVC", "ppedv.Personenverwaltung.UI.Web.MVC\ppedv.Personenverwaltung.UI.Web.MVC.csproj", "{84B9FA22-0772-4B5D-B2D5-3E623B8DA8C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Personenverwaltung.UI.Web.API", "ppedv.Personenverwaltung.UI.Web.API\ppedv.Personenverwaltung.UI.Web.API.csproj", "{F83C9B66-8084-4F6F-9FE1-77B87B160A8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Personenverwaltung.UI.Web.BlazorServer", "ppedv.Personenverwaltung.UI.Web.BlazorServer\ppedv.Personenverwaltung.UI.Web.BlazorServer.csproj", "{1E6EB063-9E42-44FA-BE6B-0D5532532977}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{84B9FA22-0772-4B5D-B2D5-3E623B8DA8C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84B9FA22-0772-4B5D-B2D5-3E623B8DA8C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84B9FA22-0772-4B5D-B2D5-3E623B8DA8C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F83C9B66-8084-4F6F-9FE1-77B87B160A8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F83C9B66-8084-4F6F-9FE1-77B87B160A8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F83C9B66-8084-4F6F-9FE1-77B87B160A8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F83C9B66-8084-4F6F-9FE1-77B87B160A8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E6EB063-9E42-44FA-BE6B-0D5532532977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E6EB063-9E42-44FA-BE6B-0D5532532977}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E6EB063-9E42-44FA-BE6B-0D5532532977}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E6EB063-9E42-44FA-BE6B-0D5532532977}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
